@@ -33,9 +33,7 @@ int main() {
 	cin >> playerChoice;
 	cout << endl;
 
-	//I have no idea what the hell is happening with this code so far.
-
-	//This will throw an error to the user letting them know that they have not selected a proper opition.
+	//This will throw an error to the user letting them know that they have not selected a proper option.
 	if (playerChoice != "rock" || playerChoice != "Rock") {
 		cout << 1 << endl;
 	}
