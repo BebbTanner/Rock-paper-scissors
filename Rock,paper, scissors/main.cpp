@@ -25,6 +25,8 @@ int main() {
 	//This will select a string from the list of opitions using the randomly generated index.
 	string CPUChoice = options[randomIndex];
 
+	//Something is happening, sometimes the cpuchoice prints nothing and I am not sure as to why.
+	cout << CPUChoice << endl;
 
 	//This is asking the user for their choice.
 	cout << "Please choose one of the following: Rock, Papper, Scissors" << endl;
@@ -32,7 +34,6 @@ int main() {
 	cout << endl;
 
 	//I have no idea what the hell is happening with this code so far.
-	cout << CPUChoice << endl;
-	cout << playerChoice << endl;
+
 
 }
