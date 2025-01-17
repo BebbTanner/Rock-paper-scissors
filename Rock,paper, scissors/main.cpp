@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
 	string playerChoice;
-	string options[3] = { "rock", "papper", "scissors" };
+	string options[3] = { "rock", "paper", "scissors" };
 
 	//This is the command that is setting the seeding to 0.
 	srand(time(0));
@@ -35,5 +35,16 @@ int main() {
 
 	//I have no idea what the hell is happening with this code so far.
 
+	//This will throw an error to the user letting them know that they have not selected a proper opition.
+	if (playerChoice != "rock" || playerChoice != "Rock") {
+		cout << 1 << endl;
+	}
+	else if (playerChoice != "paper" || playerChoice != "Paper") {
+		cout << 2 << endl;
+	}
+	else if (playerChoice != "scissors" || playerChoice != "Scissors") {
+		cout << 3 << endl;
+	}
+	
 
 }
