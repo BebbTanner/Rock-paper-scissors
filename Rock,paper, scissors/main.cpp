@@ -32,4 +32,7 @@ int main() {
 	cout << "Please choose one of the following: Rock, Papper, Scissors" << endl;
 	cin >> playerChoice;
 
+	if (playerChoice != "rock" || playerChoice != "Rock" || playerChoice != "papper" || playerChoice != "Papper" || playerChoice != "scissors" || playerChoice != "Scissors") {
+		cout << "Incorrect input!" << endl;
+	}
 }
