@@ -5,6 +5,12 @@ rock > scissors
 scissors > paper
 paper > rock
 
+Input:
+	User makes a selection
+	CPU player makes a selection
+
+output:
+	Whoever won the game is displayed
 */
 
 #include <iostream>
@@ -14,5 +20,13 @@ using namespace std;
 
 int main() {
 
+	/*
+	I need to figure out how to select items from a list randomly
+	*/
 
+	//Here is my test list
+	string myArray[3] = { "apple", "bannana", "grape" };
+
+	//Setting the randomized seeding to zero.
+	srand(time(0));
 }
