@@ -19,20 +19,23 @@ output:
 using namespace std;
 
 int main() {
-
-	/*
-	I need to figure out how to select items from a list randomly
-	*/
-
-	//Here is my test list
-	string myArray[3] = { "Rock", "Paper", "Scissors" };
-
 	//Setting the randomized seeding to zero.
 	srand(time(0));
+	//Declared variables.
+	string myArray[3] = { "Rock", "Paper", "Scissors" };
+	int playerChoice, randomNum = rand() % 3;;
 
-	//This generates a random number between 0 and 2.
-	int randomNum = rand() % 3;
+/*Start of the player choice options*/
+	cout << "Please make a selection:" << endl;
+	cout << "0 - Rock" << endl;
+	cout << "1 - Paper" << endl;
+	cout << "2 - Scissors" << endl;
+	cin >> playerChoice;
 
-	//This will take the random number and use it as the index for the array and print the correct item associated with that indexed number.
-	cout << myArray[randomNum] << endl;
+	cout << myArray[playerChoice] << endl; 
+/*End of the player choice options*/
+
+/*Start the Cpu options*/
+
+/*End the Cpu options.*/
 }
