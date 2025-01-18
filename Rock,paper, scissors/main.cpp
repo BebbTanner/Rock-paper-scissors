@@ -21,6 +21,7 @@ using namespace std;
 int main() {
 	//Setting the randomized seeding to zero.
 	srand(time(0));
+
 	//Declared variables.
 	string myArray[3] = { "Rock", "Paper", "Scissors" };
 	int playerChoice, randomNum = rand() % 3;
@@ -31,14 +32,28 @@ int main() {
 	cout << "1 - Paper" << endl;
 	cout << "2 - Scissors" << endl;
 	cin >> playerChoice;
-	myArray[playerChoice];
+	cout << endl;
+
+	cout << myArray[playerChoice] << endl;
 /*End of the player choice options*/
 
 
 /*Start the Cpu options*/
-	myArray[randomNum];
+	cout << endl;
+
+	cout << myArray[randomNum] << endl;
 /*End the Cpu options.*/
 
 
-/* Now I need to do the setup for the comparison of the options.*/
+/*  Now I need to do the setup for the comparison of the options.
+
+	0 - rock > 2 - scissors
+	2 - scissors > 1 - paper
+	1- paper > 0 -rock
+
+*/
+	if () {
+
+	}
+	
 }
