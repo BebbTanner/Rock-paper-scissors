@@ -11,6 +11,8 @@ Input:
 
 output:
 	Whoever won the game is displayed
+
+There is an issue were it will only print the output once if you run it in the same terminal.
 */
 
 #include <iostream>
