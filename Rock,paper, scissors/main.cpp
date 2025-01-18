@@ -36,6 +36,7 @@ int main() {
 /*End of the player choice options*/
 
 /*Start player win conditions*/
+
 	//Player chooses rock and cpu chooses scissors
 	if (playerChoice == 0 && randomNum == 2 ) {
 		cout << myArray[playerChoice] << endl;
@@ -59,6 +60,34 @@ int main() {
 
 		cout << "Player wins!" << endl;
 	}
+
 /*End player win conditions*/
-	
+
+/*Start player win conditions*/
+
+	//Cpu chooses rock and player chooses scissors
+	if (randomNum == 0 && playerChoice == 2) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
+
+		cout << "Computer wins!" << endl;
+	}
+
+	//Cpu chooses scissors and player chooses paper
+	else if (randomNum == 2 && playerChoice == 1) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
+
+		cout << "Computer wins!" << endl;
+	}
+
+	//Cpu chooses papper and player chooses rock
+	else if (randomNum == 1 && playerChoice == 0) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
+
+		cout << "Computer wins!" << endl;
+	}
+
+/*End player win conditions*/
 }
