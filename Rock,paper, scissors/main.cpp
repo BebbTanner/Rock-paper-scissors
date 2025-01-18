@@ -33,27 +33,32 @@ int main() {
 	cout << "2 - Scissors" << endl;
 	cin >> playerChoice;
 	cout << endl;
-
-	cout << myArray[playerChoice] << endl;
 /*End of the player choice options*/
 
+/*Start player win conditions*/
+	//Player chooses rock and cpu chooses scissors
+	if (playerChoice == 0 && randomNum == 2 ) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
 
-/*Start the Cpu options*/
-	cout << endl;
-
-	cout << myArray[randomNum] << endl;
-/*End the Cpu options.*/
-
-
-/*  Now I need to do the setup for the comparison of the options.
-
-	0 - rock > 2 - scissors
-	2 - scissors > 1 - paper
-	1- paper > 0 -rock
-
-*/
-	if () {
-
+		cout << "Player wins!" << endl;
 	}
+
+	//player chooses scissors and cpu chooses paper
+	else if (playerChoice == 2 && randomNum == 1) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
+
+		cout << "Player wins!" << endl;
+	}
+
+	//player chooses paper and cpu chooses rock
+	else if (playerChoice == 1 && randomNum == 0) {
+		cout << myArray[playerChoice] << endl;
+		cout << myArray[randomNum] << endl;
+
+		cout << "Player wins!" << endl;
+	}
+/*End player win conditions*/
 	
 }
