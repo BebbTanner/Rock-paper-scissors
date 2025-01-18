@@ -29,4 +29,8 @@ int main() {
 
 	//Setting the randomized seeding to zero.
 	srand(time(0));
+
+	//This generates a random number between 0 and 2.
+	int randomNum = rand() % 3;
+	cout << randomNum << endl;
 }
