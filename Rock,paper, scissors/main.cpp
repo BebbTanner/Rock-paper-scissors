@@ -25,12 +25,14 @@ int main() {
 	*/
 
 	//Here is my test list
-	string myArray[3] = { "apple", "bannana", "grape" };
+	string myArray[3] = { "Rock", "Paper", "Scissors" };
 
 	//Setting the randomized seeding to zero.
 	srand(time(0));
 
 	//This generates a random number between 0 and 2.
 	int randomNum = rand() % 3;
-	cout << randomNum << endl;
+
+	//This will take the random number and use it as the index for the array and print the correct item associated with that indexed number.
+	cout << myArray[randomNum] << endl;
 }
